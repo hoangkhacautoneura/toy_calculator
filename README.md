@@ -7,7 +7,7 @@ The instructions to having this running in Windows is as followed:
 4. Clone restbed recursively and place it inside calculator_back-end folder: git clone --recursive https://github.com/corvusoft/restbed.git
 5. Copy all the files in Program Files/OpenSSL-Win64/ into restbed/dependency/openssl
 6. Make a build folder at calculator_back-end. cd into it. Then open a terminal and start build the back-end (together with restbed):
-cmake -G "Visual Studio 16 2019" -DBUILD_EXAMPLES=NO -DBUILD_TESTS=NO ..
+cmake -G "Visual Studio 16 2019" -DBUILD_EXAMPLES=NO -DBUILD_TESTS=NO .. \n
 cmake --build . --target ALL_BUILD --config Release
 7. Go to calculator_front-end and build the react app
 8. Start front end:
