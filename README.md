@@ -10,7 +10,7 @@ choco install openssl
 5. Clone restbed recursively and place it inside toy_calculator/calculator_back-end folder:\
 git clone --recursive https://github.com/corvusoft/restbed.git
 6. Copy all the files in Program Files/OpenSSL-Win64/ into restbed/dependency/openssl (replace the file in destination). There should be a better way to do this but I did it like this for now because I couldn't build openssl from source. 
-7. Go into restbed/cmake folder. The file Findopenssl need to be changed. Copy the Findopenssl file that is provided in the current folder into the cloned restbed(replace the file in destination).
+7. Go into restbed/cmake folder. The file Findopenssl need to be changed. Copy the Findopenssl file that is provided in the toy_calculator folder into the cloned restbed(replace the file in destination).
 8. Make a build folder at calculator_back-end. cd into it. Then open a terminal and start build the back-end (together with restbed):
 mkdir build \
 cd build \
